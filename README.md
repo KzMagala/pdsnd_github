@@ -17,3 +17,6 @@ It's important to give proper credit. Add links to any repo that inspired you or
 
 ### Explicacion
 Este script permite analizar datos de uso de sistemas de bicicletas compartidas en tres ciudades de EEUU -Chicago, New York y Washington-. Utiliza archivos CSV para cargar y procesar la información según filtros que el usuario puede seleccionar, como la ciudad, el mes y el día de la semana.
+
+### Cambios
+Ahora se ha cambiado un poco la documentacion para que esta rama de GIT sea mas aclarativa, se cambian varios comentarios del proyecto
