@@ -5,6 +5,7 @@ import numpy as np
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
+              
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -21,7 +22,9 @@ def get_filters():
 
     print('-'*40)
     return city, month, day
+
 def load_data(city, month, day):
+
     """
     Loads data for the specified city and filters by month and day if applicable.
     Args:
@@ -32,7 +35,9 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
     return df
+
 def time_stats(df):
+
     """Displays statistics on the most frequent times of travel."""
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
@@ -43,39 +48,38 @@ def time_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
+
 def station_stats(df):
+
     """Displays statistics on the most popular stations and trip."""
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
-
-    # display most commonly used start station 
+    # display most commonly used start station
     # display most commonly used end station
     # display most frequent combination of start station and end station trip
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 def trip_duration_stats(df):
+
     """Displays statistics on the total and average trip duration."""
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
-
-    # display total travel time and the mean travel time
-
+    # display total travel time
+    # display mean travel time
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 def user_stats(df):
+
     """Displays statistics on bikeshare users."""
     print('\nCalculating User Stats...\n')
     start_time = time.time()
+
     # Display counts of user types
     # Display counts of gender
     # Display earliest, most recent, and most common year of birth
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
-    # This is the main loop of the program
-    # In main function, we call each of the individual functions
-    # with the data loaded from the users indications
 def main():
     while True:
         city, month, day = get_filters()
